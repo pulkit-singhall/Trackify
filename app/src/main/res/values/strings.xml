@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">trackify</string>
+    <string name="login_button">LOGIN</string>
+    <string name="register_button">REGISTER</string>
+    <string name="intro">Your One Stop App For Daily Expense Tracker</string>
+    <string name="main_heading">TRACKIFY</string>
+    <string name="dashboard">DASHBOARD</string>
+    <string name="income">INCOME</string>
+    <string name="balance">BALANCE</string>
+    <string name="expense">EXPENSE</string>
+    <string name="add">Add Transaction</string>
+    <string name="update">Update Transaction</string>
+    <string name="new_update">UPDATE</string>
+    <string name="new_delete">DELETE</string>
+    <string name="new_transaction">ADD</string>
+    <string name="amount">Amount</string>
+    <string name="note">Note</string>
+</resources>

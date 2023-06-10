@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's Register"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="40dp"
+            android:textSize="35dp"
+            android:gravity="center"
+            android:layout_marginRight="10dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/password_image"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:hint="Email"
+        android:ems="9"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:id="@+id/email_register"
+        android:background="@color/more_light_grey"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:textColorHint="@color/light_grey"
+        android:fontFamily="@font/poppins_light"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:hint="Password"
+        android:ems="9"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:id="@+id/password_register"
+        android:background="@color/more_light_grey"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:textColorHint="@color/light_grey"
+        android:fontFamily="@font/poppins_light"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:text="@string/register_button"
+        android:id="@+id/register_button"
+        android:layout_marginTop="25dp"
+        android:textColor="#fff"
+        android:backgroundTint="@color/orange"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
