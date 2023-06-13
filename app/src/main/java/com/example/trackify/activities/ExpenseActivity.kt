@@ -84,6 +84,9 @@ class ExpenseActivity : AppCompatActivity() {
     // function to load data from fire store
     private fun loadData() {
         val id = UUID.randomUUID().toString()
+        // take care of this
+        history_list.clear()
+
         auth.uid?.let { fStore.collection("Transactions").document(it).collection("Details")
             .get().addOnSuccessListener {
                 if(it.isEmpty == false){

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">trackify</string>
+    <string name="app_name">Trackify</string>
     <string name="login_button">LOGIN</string>
     <string name="register_button">REGISTER</string>
     <string name="intro">Your One Stop App For Daily Expense Tracker</string>
