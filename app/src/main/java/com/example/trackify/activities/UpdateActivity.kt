@@ -1,6 +1,7 @@
 package com.example.trackify.activities
 
 import android.content.DialogInterface
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -86,6 +87,14 @@ class UpdateActivity : AppCompatActivity() {
                 .document(id).delete().addOnCompleteListener {
                     if(it.isSuccessful){
                         Toast.makeText(this, "Deleted Successfully!", Toast.LENGTH_SHORT).show()
+                        bind.noteAdded.text.clear()
+                        bind.isIncome.isChecked = false
+                        bind.isExpense.isChecked = false
+                        bind.amountAdded.text.clear()
+
+                        val intent = Intent(this,ExpenseActivity::class.java)
+                        startActivity(intent)
+                        finish()
                     }
                     else{
                         Toast.makeText(this, "Failure!", Toast.LENGTH_SHORT).show()
@@ -122,6 +131,14 @@ class UpdateActivity : AppCompatActivity() {
                     .addOnCompleteListener {
                         if(it.isSuccessful){
                             Toast.makeText(this, "Updated Successfully!", Toast.LENGTH_SHORT).show()
+                            bind.noteAdded.text.clear()
+                            bind.isIncome.isChecked = false
+                            bind.isExpense.isChecked = false
+                            bind.amountAdded.text.clear()
+
+                            val intent = Intent(this,ExpenseActivity::class.java)
+                            startActivity(intent)
+                            finish()
                         }
                         else{
                             Toast.makeText(this, "Failure!", Toast.LENGTH_SHORT).show()
