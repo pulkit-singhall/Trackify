@@ -29,7 +29,7 @@ class RegisterActivity : AppCompatActivity() {
                     // success
                     if(it.isSuccessful){
                         Toast.makeText(this,"User Registered Successfully!",Toast.LENGTH_SHORT).show()
-                        val intent = Intent(this, ExpenseActivity::class.java)
+                        val intent = Intent(this, LoginActivity::class.java)
                         startActivity(intent)
                         finish()
                     }
